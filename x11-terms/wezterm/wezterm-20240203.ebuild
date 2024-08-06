@@ -7,7 +7,7 @@ inherit bash-completion-r1 cargo desktop
 DESCRIPTION="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 HOMEPAGE="https://github.com/wez/wezterm"
 SRC_URI="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/wezterm-20240203-110809-5046fc22-src.tar.gz -> wezterm-20240203-110809-5046fc22-src.tar.gz
-https://distfiles.macaronios.org/f0/4f/2e/f04f2e659f1ab602f100309ad781759c37de97fddaa33850990307ec9597e43dd6d51a27a468bd38d4e326c676e99ab86c150dc4a5b14261015c83a61fdaefea -> wezterm-20240203-funtoo-crates-bundle-edb626b0cfa9b7fa25599ef2c7cc56d58798a871027391943321d609eacb451080a02b7a01ca1e9667074aff88592394fa6e63d0d05f7b7c0bfb9b4e25dfdc94.tar.gz"
+https://distfiles.macaronios.org/6e/53/f4/6e53f450f638cd43892f5b512381b6c300d44dcd64f1d14104ae1c98f96e816e9412089d98e884faf72563146ead0a027031441d18b1c649da7f8146c74037e3 -> wezterm-20240203-funtoo-crates-bundle-edb626b0cfa9b7fa25599ef2c7cc56d58798a871027391943321d609eacb451080a02b7a01ca1e9667074aff88592394fa6e63d0d05f7b7c0bfb9b4e25dfdc94.tar.gz"
 
 LICENSE="Apache-2.0 Boost-1.0 BSD BSD-2 CC0-1.0 ISC LGPL-3+ MIT Apache-2.0 Unlicense ZLIB"
 SLOT="0"
