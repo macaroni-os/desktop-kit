@@ -9,7 +9,7 @@ inherit bash-completion-r1 cargo desktop python-any-r1
 DESCRIPTION="A cross-platform, OpenGL terminal emulator."
 HOMEPAGE="https://github.com/alacritty/alacritty"
 SRC_URI="https://github.com/alacritty/alacritty/tarball/247b3564633afb2fcd6efbc88875f263c5623fca -> alacritty-0.13.2-247b356.tar.gz
-https://distfiles.macaronios.org/b8/72/0e/b8720eb89f72188179e27035445dd5d7ff3477b1bedc74a37ff885dd2e0512df753286939782bd1c53399b038791415d396d67c6bebf597b6068b8bc3b411dac -> alacritty-0.13.2-funtoo-crates-bundle-455e50e0a7565f7d47840d84f98c98c6c6c911f0388fc09f061af1a3b2db48f885742eac8d6edc8533cfbb1ac6ad077178f0660a61c0fad3584fffb6c4f7c75c.tar.gz"
+https://distfiles.macaronios.org/89/1d/a1/891da1835e313328b763f01a994e571166351d250aa26a896734600698b6770fbf1d8fb4be981981da2bee3f0397879d35201922b0555827dfbb3325940c98a3 -> alacritty-0.13.2-funtoo-crates-bundle-455e50e0a7565f7d47840d84f98c98c6c6c911f0388fc09f061af1a3b2db48f885742eac8d6edc8533cfbb1ac6ad077178f0660a61c0fad3584fffb6c4f7c75c.tar.gz"
 
 KEYWORDS="*"
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 BSD BSD-2 CC0-1.0 FTL ISC MIT MPL-2.0 Unlicense WTFPL-2 ZLIB"
