@@ -1,19 +1,17 @@
-# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=4
+EAPI=7
 
-MY_P=glw-"${PV}"
-
-inherit autotools-utils
+inherit autotools
 
 DESCRIPTION="Mesa GLw library"
 HOMEPAGE="http://mesa3d.sourceforge.net/"
-SRC_URI="ftp://ftp.freedesktop.org/pub/mesa/glw/${MY_P}.tar.bz2"
+SRC_URI="https://archive.mesa3d.org/glw/glw-8.0.0.tar.bz2 -> glw-8.0.0.tar.bz2
+"
 
 SLOT="0"
 LICENSE="MIT"
-KEYWORDS="amd64 ppc ~ppc64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="*"
 IUSE="+motif static-libs"
 
 RDEPEND="
@@ -25,11 +23,15 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S="${WORKDIR}"/${MY_P}
+post_src_unpack() {
+	if [ ! -d "${WORKDIR}/${S}" ]; then
+		mv "${WORKDIR}"/* "${S}" || die
+	fi
+}
 
 src_configure() {
 	local myeconfargs=(
 		--enable-motif
 		)
-	autotools-utils_src_configure
+	econf ${myeconfargs[@]}
 }

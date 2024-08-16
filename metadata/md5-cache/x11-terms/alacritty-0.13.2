@@ -1,0 +1,15 @@
+BDEPEND=dev-util/cmake virtual/rust >=virtual/rust-1.37.0
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=|| ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.7 dev-lang/python:3.10 )
+DESCRIPTION=A cross-platform, OpenGL terminal emulator.
+EAPI=7
+HOMEPAGE=https://github.com/alacritty/alacritty
+IUSE=wayland +X debug
+KEYWORDS=*
+LICENSE=Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 BSD BSD-2 CC0-1.0 FTL ISC MIT MPL-2.0 Unlicense WTFPL-2 ZLIB
+RDEPEND=media-libs/fontconfig:= media-libs/freetype:2 X? ( x11-libs/libxcb:=[xkb] ) media-libs/mesa[X?,wayland?] sys-libs/zlib sys-libs/ncurses:0 wayland? ( dev-libs/wayland ) X? ( x11-libs/libXcursor x11-libs/libXi x11-libs/libXrandr )
+REQUIRED_USE=|| ( wayland X )
+SLOT=0
+SRC_URI=https://github.com/alacritty/alacritty/tarball/247b3564633afb2fcd6efbc88875f263c5623fca -> alacritty-0.13.2-247b356.tar.gz https://distfiles.macaronios.org/89/1d/a1/891da1835e313328b763f01a994e571166351d250aa26a896734600698b6770fbf1d8fb4be981981da2bee3f0397879d35201922b0555827dfbb3325940c98a3 -> alacritty-0.13.2-funtoo-crates-bundle-455e50e0a7565f7d47840d84f98c98c6c6c911f0388fc09f061af1a3b2db48f885742eac8d6edc8533cfbb1ac6ad077178f0660a61c0fad3584fffb6c4f7c75c.tar.gz
+_eclasses_=bash-completion-r1	47a7402d95930413ce25ba8d857339bb	cargo	a3e90d3e6ca8541d967cff212149cffc	desktop	b1d22ac8bdd4679ab79c71aca235009d	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	54a3178500786b0a7ede4a23b7f2a6ad	python-utils-r1	d3f9ec72badd0291b655682d67876adc	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=4302caa8e5fd2f158d0b2aa40af30ac1

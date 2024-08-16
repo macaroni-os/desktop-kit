@@ -1,16 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=4
+EAPI=7
 
-inherit autotools-utils
+inherit autotools
 
 DESCRIPTION="Motif-based widget to display a grid of cells as a spreadsheet"
 HOMEPAGE="http://xbae.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="https://downloads.sourceforge.net/xbae/xbae/xbae-4.60.4.tar.gz -> xbae-4.60.4.tar.gz"
 
 LICENSE="BSD"
-KEYWORDS="alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="*"
 SLOT="0"
 IUSE="doc examples static-libs"
 
@@ -29,15 +28,9 @@ DEPEND="${RDEPEND}"
 # and are interactive so virtualx will not help
 RESTRICT=test
 
-PATCHES=(
-	"${FILESDIR}"/${P}-tmpl.patch
-	"${FILESDIR}"/${P}-lxmp.patch
-	"${FILESDIR}"/${P}-Makefile.in.patch
-	)
-
 src_configure() {
 	local myeconfargs=( --enable-production )
-	autotools-utils_src_configure
+	econf ${myeconfargs[@]}
 }
 
 src_test() {
@@ -48,8 +41,6 @@ src_test() {
 }
 
 src_install() {
-	autotools-utils_src_install
-
 	insinto /usr/share/aclocal
 	doins ac_find_xbae.m4
 
