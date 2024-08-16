@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="A full-featured, hackable tiling window manager written in Python"
 HOMEPAGE="http://www.qtile.org/"
-SRC_URI="https://distfiles.macaronios.org/21/3a/85/213a8551b0a96dd322688dfacecc2302c9dce3bd92e3c07f003226984ddf15146b04dff09bf208274a560a0f0c7f44616ace5bd4cc00ce1984cd5e5a463048db -> qtile-0.22.1.20230709.tar.gz"
+SRC_URI="https://distfiles.macaronios.org/10/cf/49/10cf49f8aeb02b22058b70b1794f979afff8ef0ed8765ab4dca646b5b549461ff72d3690ea4b2361978bf326ff2e2cd5a033b8dece2d38d8f29490763b8a57c8 -> qtile-0.22.1.20230709.tar.gz"
 
 DEPEND=""
 RDEPEND="
