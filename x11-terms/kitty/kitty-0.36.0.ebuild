@@ -20,8 +20,8 @@ EGO_SUM=(
 	"github.com/davecgh/go-spew v1.1.1/go.mod"
 	"github.com/disintegration/imaging v1.6.2"
 	"github.com/disintegration/imaging v1.6.2/go.mod"
-	"github.com/dlclark/regexp2 v1.11.0"
-	"github.com/dlclark/regexp2 v1.11.0/go.mod"
+	"github.com/dlclark/regexp2 v1.11.4"
+	"github.com/dlclark/regexp2 v1.11.4/go.mod"
 	"github.com/edwvee/exiffix v0.0.0-20240229113213-0dbb146775be"
 	"github.com/edwvee/exiffix v0.0.0-20240229113213-0dbb146775be/go.mod"
 	"github.com/go-ole/go-ole v1.2.6"
@@ -71,15 +71,15 @@ EGO_SUM=(
 	"golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b"
 	"golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b/go.mod"
 	"golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8/go.mod"
-	"golang.org/x/image v0.17.0"
-	"golang.org/x/image v0.17.0/go.mod"
+	"golang.org/x/image v0.19.0"
+	"golang.org/x/image v0.19.0/go.mod"
 	"golang.org/x/sys v0.0.0-20190916202348-b4ddaad3f8a3/go.mod"
 	"golang.org/x/sys v0.0.0-20201204225414-ed752295db88/go.mod"
 	"golang.org/x/sys v0.5.0/go.mod"
 	"golang.org/x/sys v0.8.0/go.mod"
 	"golang.org/x/sys v0.11.0/go.mod"
-	"golang.org/x/sys v0.21.0"
-	"golang.org/x/sys v0.21.0/go.mod"
+	"golang.org/x/sys v0.24.0"
+	"golang.org/x/sys v0.24.0/go.mod"
 	"golang.org/x/text v0.3.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0/go.mod"
@@ -91,8 +91,8 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.35.2/kitty-0.35.2.tar.xz -> kitty-0.35.2.tar.xz
-https://distfiles.macaronios.org/73/22/94/7322941e2acbc0160b9d964526347d30de66591db73d1a990b0e2b5bcca48b6d259bacdd337c9a1be248035698bbb7f673f0c4bb60a3d91a22864e4ef6f0a91d -> kitty-0.35.2-funtoo-go-bundle-2c8aa492cb4c2b3d635d607e3b28cfbb42f5aac53ece1b5667341bbeae3761ba2668cbd8802a50d2fe66ed019d583a6a566ac7aaf64a30235b21b10786960c73.tar.gz"
+SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.0/kitty-0.36.0.tar.xz -> kitty-0.36.0.tar.xz
+https://distfiles.macaronios.org/d0/26/95/d026950e82d9f3afb28e4e4d5aebe5d995c42094d6d380b590d6d51533bec5d9c7366a18c4241571628ba5cfa7b09cdf357081294fd5ce357c9b00dad10b3c5f -> kitty-0.36.0-funtoo-go-bundle-237f3196ec88c2c255fbc8e15679c14f098e61fec1c2c2bbc2769506355889d6a476cb3f3b561f95737ddf8cee45d08a2ed3cd3ee88bc7e59b6603e59a0f5899.tar.gz"
 KEYWORDS="next"
 
 DESCRIPTION="Cross-platform, fast, feature-rich, GPU based terminal"
