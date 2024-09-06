@@ -48,8 +48,8 @@ EGO_SUM=(
 	"github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd/go.mod"
 	"github.com/seancfoley/bintree v1.3.1"
 	"github.com/seancfoley/bintree v1.3.1/go.mod"
-	"github.com/seancfoley/ipaddress-go v1.6.0"
-	"github.com/seancfoley/ipaddress-go v1.6.0/go.mod"
+	"github.com/seancfoley/ipaddress-go v1.7.0"
+	"github.com/seancfoley/ipaddress-go v1.7.0/go.mod"
 	"github.com/shirou/gopsutil/v3 v3.24.5"
 	"github.com/shirou/gopsutil/v3 v3.24.5/go.mod"
 	"github.com/shoenig/go-m1cpu v0.1.6"
@@ -91,8 +91,8 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.1/kitty-0.36.1.tar.xz -> kitty-0.36.1.tar.xz
-https://distfiles.macaronios.org/6d/63/da/6d63da09739ded9ae0bade4437b30383cd0b98dbc2ff81939642879d5f9d6ca511feef5b13534f04038efdb5ef305448789d906aa006e2cdee9aa618373e78fc -> kitty-0.36.1-funtoo-go-bundle-237f3196ec88c2c255fbc8e15679c14f098e61fec1c2c2bbc2769506355889d6a476cb3f3b561f95737ddf8cee45d08a2ed3cd3ee88bc7e59b6603e59a0f5899.tar.gz"
+SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.2/kitty-0.36.2.tar.xz -> kitty-0.36.2.tar.xz
+https://distfiles.macaronios.org/e3/2c/41/e32c4139e9604999d1b646409c1c512fd33a49e83f73454c3c50171afd3aba09b244a467225853527a4f5bf87f4f061fdadccab7aafe82ccaa37036b21d3fd3c -> kitty-0.36.2-funtoo-go-bundle-461327bae0cc725b60b0b81eacad8478a5235a27875d46e8a4f093b36c0bb4ca50117bd752c0d39535bc215722fcfb8f9f7ec2edaeede8ad6cadae6f007f7758.tar.gz"
 KEYWORDS="next"
 
 DESCRIPTION="Cross-platform, fast, feature-rich, GPU based terminal"
