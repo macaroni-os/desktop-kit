@@ -71,15 +71,15 @@ EGO_SUM=(
 	"golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b"
 	"golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b/go.mod"
 	"golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8/go.mod"
-	"golang.org/x/image v0.19.0"
-	"golang.org/x/image v0.19.0/go.mod"
+	"golang.org/x/image v0.20.0"
+	"golang.org/x/image v0.20.0/go.mod"
 	"golang.org/x/sys v0.0.0-20190916202348-b4ddaad3f8a3/go.mod"
 	"golang.org/x/sys v0.0.0-20201204225414-ed752295db88/go.mod"
 	"golang.org/x/sys v0.5.0/go.mod"
 	"golang.org/x/sys v0.8.0/go.mod"
 	"golang.org/x/sys v0.11.0/go.mod"
-	"golang.org/x/sys v0.24.0"
-	"golang.org/x/sys v0.24.0/go.mod"
+	"golang.org/x/sys v0.25.0"
+	"golang.org/x/sys v0.25.0/go.mod"
 	"golang.org/x/text v0.3.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0/go.mod"
@@ -91,8 +91,8 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.2/kitty-0.36.2.tar.xz -> kitty-0.36.2.tar.xz
-https://distfiles.macaronios.org/97/60/d7/9760d7532e99896f16ef1b6257b1396c0634e7dcad009bbd41a245ae03c5f9a051da04e051c9f4baf5506532fa349a1c36faf89afb9df8172ab0e862b8d6898e -> kitty-0.36.2-funtoo-go-bundle-461327bae0cc725b60b0b81eacad8478a5235a27875d46e8a4f093b36c0bb4ca50117bd752c0d39535bc215722fcfb8f9f7ec2edaeede8ad6cadae6f007f7758.tar.gz"
+SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.3/kitty-0.36.3.tar.xz -> kitty-0.36.3.tar.xz
+https://distfiles.macaronios.org/17/48/51/174851ec2d173c4c207e990df70104d476a34a51a049c73dbfbf17d81a6e2875053f3311b3d4b90219e2b7739069e126cafe2c0504bfb67a14f247371e2e8da1 -> kitty-0.36.3-funtoo-go-bundle-377f7c44326578b49216b980905c12c46fedd32e028d271d48c73f6a64fc4a16fa9efc0516aaf7969d1c4a42389de2265e74ebb24374c266a1455da469e7a4ab.tar.gz"
 KEYWORDS="next"
 
 DESCRIPTION="Cross-platform, fast, feature-rich, GPU based terminal"
