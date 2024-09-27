@@ -91,8 +91,8 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.3/kitty-0.36.3.tar.xz -> kitty-0.36.3.tar.xz
-https://distfiles.macaronios.org/17/48/51/174851ec2d173c4c207e990df70104d476a34a51a049c73dbfbf17d81a6e2875053f3311b3d4b90219e2b7739069e126cafe2c0504bfb67a14f247371e2e8da1 -> kitty-0.36.3-funtoo-go-bundle-377f7c44326578b49216b980905c12c46fedd32e028d271d48c73f6a64fc4a16fa9efc0516aaf7969d1c4a42389de2265e74ebb24374c266a1455da469e7a4ab.tar.gz"
+SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.36.4/kitty-0.36.4.tar.xz -> kitty-0.36.4.tar.xz
+https://distfiles.macaronios.org/af/b1/09/afb109754329a517725bfcd08ebb3395fca6057d3c22587c59415c2b08fcd0e61778989dcbfa13cac691f7ffb8e5314f1b542a0d7515cce1f0dfeaa174559842 -> kitty-0.36.4-funtoo-go-bundle-377f7c44326578b49216b980905c12c46fedd32e028d271d48c73f6a64fc4a16fa9efc0516aaf7969d1c4a42389de2265e74ebb24374c266a1455da469e7a4ab.tar.gz"
 KEYWORDS="next"
 
 DESCRIPTION="Cross-platform, fast, feature-rich, GPU based terminal"
