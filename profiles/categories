@@ -13,6 +13,7 @@ media-gfx
 net-libs
 net-misc
 net-print
+sys-boot
 sys-libs
 sys-process
 virtual
