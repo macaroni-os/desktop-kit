@@ -3,6 +3,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3+ )
+DISTUTILS_USE_PEP517="setuptools"
 inherit distutils-r1
 
 DESCRIPTION="Deduplicated, encrypted, authenticated and compressed backups"
@@ -13,15 +14,15 @@ DEPEND="
 	!!app-office/borg
 	app-arch/lz4
 	virtual/acl
-	!libressl? ( dev-libs/openssl:0= )
-	libressl? ( dev-libs/libressl:0= )
+	dev-libs/xxhash
+	dev-libs/openssl:0=
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	dev-python/cython[${PYTHON_USEDEP}]"
 RDEPEND="
 	${DEPEND}
-	dev-python/llfuse[${PYTHON_USEDEP}]
+	dev-python/pyfuse3[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]"
-IUSE="libressl"
+IUSE=""
 SLOT="0"
 LICENSE="BSD"
 KEYWORDS="*"
@@ -34,9 +35,19 @@ python_prepare_all() {
 }
 
 src_compile() {
-	BORG_OPENSSL_PREFIX=/usr distutils-r1_src_compile
+	BORG_LIBLZ4_PREFIX=/usr \
+	BORG_OPENSSL_PREFIX=/usr \
+	BORG_LIBZSTD_PREFIX=/usr \
+	BORG_LIBXXHASH_PREFIX=/usr \
+	BORG_LIBACL_PREFIX=/usr \
+	distutils-r1_src_compile
 }
 
 src_install() {
-	BORG_OPENSSL_PREFIX=/usr distutils-r1_src_install
+	BORG_LIBLZ4_PREFIX=/usr \
+	BORG_LIBZSTD_PREFIX=/usr \
+	BORG_OPENSSL_PREFIX=/usr \
+	BORG_LIBXXHASH_PREFIX=/usr \
+	BORG_LIBACL_PREFIX=/usr \
+	distutils-r1_src_install
 }
