@@ -6,7 +6,7 @@ inherit qmake-utils eutils desktop
 
 DESCRIPTION="A plain-text file markdown note taking with Nextcloud/ownCloud integration"
 HOMEPAGE="https://www.qownnotes.org/"
-SRC_URI="https://download.tuxfamily.org/qownnotes/src/qownnotes-23.6.6.tar.xz -> qownnotes-23.6.6.tar.xz"
+SRC_URI="https://github.com/pbek/QOwnNotes/releases/download/v24.12.2/qownnotes-24.12.2.tar.xz -> qownnotes-24.12.2.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -31,7 +31,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	echo "#define RELEASE \"Funtoo\"" > release.h
+	echo "#define RELEASE \"MacaroniOS\"" > release.h
 
 	default
 }
