@@ -6,5 +6,5 @@ KEYWORDS=*
 LICENSE=GPL-3
 RESTRICT=test
 SLOT=0
-SRC_URI=https://github.com/kovidgoyal/kitty/releases/download/v0.38.1/kitty-0.38.1.tar.xz -> kitty-0.38.1.tar.xz
-_md5_=c4c746782c4e2d1c6dd5a861b481613a
+SRC_URI=https://github.com/kovidgoyal/kitty/releases/download/v0.39.0/kitty-0.39.0.tar.xz -> kitty-0.39.0.tar.xz
+_md5_=14dd4aff30a9ea359504dc5eef4fe9ff

@@ -8,10 +8,10 @@ inherit python-single-r1 toolchain-funcs xdg go-module
 EGO_SUM=(
 	"github.com/!a!l!tree/bigfloat v0.2.0"
 	"github.com/!a!l!tree/bigfloat v0.2.0/go.mod"
-	"github.com/alecthomas/assert/v2 v2.7.0"
-	"github.com/alecthomas/assert/v2 v2.7.0/go.mod"
-	"github.com/alecthomas/chroma/v2 v2.14.0"
-	"github.com/alecthomas/chroma/v2 v2.14.0/go.mod"
+	"github.com/alecthomas/assert/v2 v2.11.0"
+	"github.com/alecthomas/assert/v2 v2.11.0/go.mod"
+	"github.com/alecthomas/chroma/v2 v2.15.0"
+	"github.com/alecthomas/chroma/v2 v2.15.0/go.mod"
 	"github.com/alecthomas/repr v0.4.0"
 	"github.com/alecthomas/repr v0.4.0/go.mod"
 	"github.com/bmatcuk/doublestar/v4 v4.7.1"
@@ -78,8 +78,8 @@ EGO_SUM=(
 	"golang.org/x/sys v0.5.0/go.mod"
 	"golang.org/x/sys v0.8.0/go.mod"
 	"golang.org/x/sys v0.11.0/go.mod"
-	"golang.org/x/sys v0.28.0"
-	"golang.org/x/sys v0.28.0/go.mod"
+	"golang.org/x/sys v0.29.0"
+	"golang.org/x/sys v0.29.0/go.mod"
 	"golang.org/x/text v0.3.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0/go.mod"
@@ -91,8 +91,8 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.38.1/kitty-0.38.1.tar.xz -> kitty-0.38.1.tar.xz
-https://distfiles.macaronios.org/0b/c0/a1/0bc0a14c026c5e39ce0a7a14eb6c7c7f3b20e8a16ffff2ed448550723120f54be78d63c0112aa221d08d50fb80eb33e85db5232b1f79daea78cb83117adc96b1 -> kitty-0.38.1-funtoo-go-bundle-24ae4bd021b8213452eea8f780f99218f8a6a52f8ad9dee49fc82bd1353a1957615a7d1ee4986deaab44433603371af444ac43b493ca729beb2498f2858b9a30.tar.gz"
+SRC_URI="https://github.com/kovidgoyal/kitty/releases/download/v0.39.0/kitty-0.39.0.tar.xz -> kitty-0.39.0.tar.xz
+https://distfiles.macaronios.org/ee/90/14/ee90144c4b3aea6cd3c59c588e38223fcba35444b30e09c4b133f7657633a98c1d27cf073dee89c35e985bd26b8d56a04cc37b4b3aa5b2901f163c7e8c42b08e -> kitty-0.39.0-funtoo-go-bundle-0d0a3f1a8611460e20242cfbae0b39b098fcd092620078515b1ec0af4a680acfb6b80720781e00cfdae22232257295c6d65723f5411cb85a6bb20605898b2070.tar.gz"
 KEYWORDS="*"
 
 DESCRIPTION="Cross-platform, fast, feature-rich, GPU based terminal"
