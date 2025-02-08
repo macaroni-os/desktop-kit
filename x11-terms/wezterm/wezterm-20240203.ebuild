@@ -6,7 +6,7 @@ inherit bash-completion-r1 cargo desktop
 
 DESCRIPTION="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 HOMEPAGE="https://github.com/wez/wezterm"
-SRC_URI="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/wezterm-20240203-110809-5046fc22-src.tar.gz -> wezterm-20240203-110809-5046fc22-src.tar.gz
+SRC_URI="https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/wezterm-20240203-110809-5046fc22-src.tar.gz -> wezterm-20240203-110809-5046fc22-src.tar.gz
 https://distfiles.macaronios.org/45/22/3a/45223a3f96923c3275c8d7ebaebe2b9e06890a467853edc0cad60b81a19ee3330f8e5b1892e25c9489954c01eae353c5b9789e287808e362e48b24ba1c274c2f -> wezterm-20240203-funtoo-crates-bundle-edb626b0cfa9b7fa25599ef2c7cc56d58798a871027391943321d609eacb451080a02b7a01ca1e9667074aff88592394fa6e63d0d05f7b7c0bfb9b4e25dfdc94.tar.gz"
 
 LICENSE="Apache-2.0 Boost-1.0 BSD BSD-2 CC0-1.0 ISC LGPL-3+ MIT Apache-2.0 Unlicense ZLIB"
