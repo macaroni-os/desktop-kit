@@ -6,7 +6,7 @@ inherit desktop optfeature prefix xdg
 
 DESCRIPTION="Screenshot tool for Linux"
 HOMEPAGE="https://github.com/shutter-project/shutter"
-SRC_URI="https://github.com/shutter-project/shutter/tarball/fa324ef66fbeb66dd228317ebd1d015e50c4fb5d -> shutter-0.99.5-fa324ef.tar.gz"
+SRC_URI="https://github.com/shutter-project/shutter/tarball/07d1fb1133b1621a231a3dfbafe09e17a7b365b5 -> shutter-0.99.6-07d1fb1.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
