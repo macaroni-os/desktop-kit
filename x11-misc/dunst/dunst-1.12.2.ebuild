@@ -6,7 +6,7 @@ inherit systemd toolchain-funcs
 
 DESCRIPTION="Lightweight and customizable notification daemon"
 HOMEPAGE="https://dunst-project.org/ https://github.com/dunst-project/dunst"
-SRC_URI="https://github.com/dunst-project/dunst/tarball/352724c1480623f3cf8a8119dc4db5094afe17c7 -> dunst-1.12.1-352724c.tar.gz"
+SRC_URI="https://github.com/dunst-project/dunst/tarball/db93db6e879af7bdf8c55781f3f8741e0add690a -> dunst-1.12.2-db93db6.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
