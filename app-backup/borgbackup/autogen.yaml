@@ -1,0 +1,47 @@
+dev_python_autogen_rule:
+  defaults:
+    cat: app-backup
+    python_compat: python3+
+    du_pep517: setuptools
+  generator: pypi-simple-1
+  packages:
+    - borgbackup:
+        pydeps:
+          py:all:
+            - pyfuse3
+            - packaging
+          py:all:build:
+            - setuptools_scm
+            - cython
+        depend: |
+          !!app-office/borg
+          app-arch/lz4
+          virtual/acl
+          dev-libs/xxhash
+          dev-libs/openssl:0=
+        rdepend: |
+          ${DEPEND}
+        body: |
+          python_prepare_all() {
+            # allow use of new (renamed) msgpack
+            sed -i "s|'msgpack-python.*',||g" setup.py || die
+            distutils-r1_python_prepare_all
+          }
+
+          src_compile() {
+            BORG_LIBLZ4_PREFIX=/usr \
+            BORG_OPENSSL_PREFIX=/usr \
+            BORG_LIBZSTD_PREFIX=/usr \
+            BORG_LIBXXHASH_PREFIX=/usr \
+            BORG_LIBACL_PREFIX=/usr \
+            distutils-r1_src_compile
+          }
+
+          src_install() {
+            BORG_LIBLZ4_PREFIX=/usr \
+            BORG_LIBZSTD_PREFIX=/usr \
+            BORG_OPENSSL_PREFIX=/usr \
+            BORG_LIBXXHASH_PREFIX=/usr \
+            BORG_LIBACL_PREFIX=/usr \
+            distutils-r1_src_install
+          }

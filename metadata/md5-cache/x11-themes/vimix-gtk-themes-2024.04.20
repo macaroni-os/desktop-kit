@@ -1,0 +1,13 @@
+BDEPEND=dev-lang/sassc
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/gtk+:3 gtk2? ( x11-themes/gtk-engines x11-themes/gtk-engines-murrine )
+DESCRIPTION=A flat Material Design theme for GTK
+EAPI=7
+HOMEPAGE=https://github.com/vinceliuice/vimix-gtk-themes
+IUSE=gtk2
+KEYWORDS=*
+LICENSE=GPL-3
+RDEPEND=x11-libs/gtk+:3 gtk2? ( x11-themes/gtk-engines x11-themes/gtk-engines-murrine )
+SLOT=0
+SRC_URI=https://github.com/vinceliuice/vimix-gtk-themes/tarball/65f27bc120a58f3c24935ce5682a574e868e29a2 -> vimix-gtk-themes-2024.04.20-65f27bc.tar.gz
+_md5_=c0c191518023c960a038e3c58341bdfb
