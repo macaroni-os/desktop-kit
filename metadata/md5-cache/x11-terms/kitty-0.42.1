@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig >=dev-lang/go-1.12 app-arch/unzip
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
+DEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 >=dev-lang/python-exec-2:=[python_targets_python3_10] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) ~x11-terms/kitty-shell-integration-0.42.1 ~x11-terms/kitty-terminfo-0.42.1 media-libs/fontconfig media-libs/freetype:2 >=media-libs/harfbuzz-1.5.0:= media-libs/lcms media-libs/libcanberra media-libs/libpng:0= sys-apps/dbus sys-libs/zlib x11-libs/libxcb[xkb] x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama x11-libs/libxkbcommon[X] x11-libs/libXrandr net-libs/librsync dev-libs/xxhash wayland? ( dev-libs/wayland >=dev-libs/wayland-protocols-1.17 ) media-libs/mesa[X] sys-libs/ncurses amd64? ( dev-libs/simde ) arm64? ( dev-libs/simde ) dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Cross-platform, fast, feature-rich, GPU based terminal
+EAPI=7
+HOMEPAGE=https://github.com/kovidgoyal/kitty
+IUSE=debug wayland python_single_target_python3_10 python_single_target_python3_9 python_targets_python3_10 python_targets_python3_9
+KEYWORDS=*
+LICENSE=GPL-3
+RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 >=dev-lang/python-exec-2:=[python_targets_python3_10] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) ~x11-terms/kitty-shell-integration-0.42.1 ~x11-terms/kitty-terminfo-0.42.1 media-libs/fontconfig media-libs/freetype:2 >=media-libs/harfbuzz-1.5.0:= media-libs/lcms media-libs/libcanberra media-libs/libpng:0= sys-apps/dbus sys-libs/zlib x11-libs/libxcb[xkb] x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama x11-libs/libxkbcommon[X] x11-libs/libXrandr net-libs/librsync dev-libs/xxhash wayland? ( dev-libs/wayland >=dev-libs/wayland-protocols-1.17 )
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_9 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/kovidgoyal/kitty/releases/download/v0.42.1/kitty-0.42.1.tar.xz -> kitty-0.42.1.tar.xz https://distfiles.macaronios.org/2d/53/de/2d53dee8b34fd466e7b9416537450fd8cc942159660c42f308e1baeb7b7f40fc9f907255e32ad4aa04892cbde37e1f2cd3184d0093a88480216557aa983266d3 -> kitty-0.42.1-funtoo-go-bundle-d377ea9fd0c37ee79eb941aa616cf175a27d92d6c3f3f3b8609d660ffc6d800aae878e8f393382f9361cf8ce74d3e61299f33daecbc7c2ce47d50162a08dcdba.tar.gz
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	go-module	cb10a443c46556a15ed035d7a99128e8	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-single-r1	ce99dfba1cad0514af51a32b2b6964af	python-utils-r1	d3f9ec72badd0291b655682d67876adc	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
+_md5_=616b4fb6d0615054ffff1d3056132ea4
