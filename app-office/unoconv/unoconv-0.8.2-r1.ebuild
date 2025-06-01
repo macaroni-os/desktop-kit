@@ -24,6 +24,7 @@ DEPEND=""
 RDEPEND="${DEPEND}
 	${PYTHON_DEPS}
 	!app-text/odt2txt
+	virtual/ooo
 "
 
 src_prepare() {
