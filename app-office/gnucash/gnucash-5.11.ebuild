@@ -128,6 +128,14 @@ src_prepare() {
 	for x in "${fixtestfiles[@]}"; do
 		sed -i -e "s|\"/tmp/|\"${T}/|g" "${S}/${x}" || die "sed of "${S}/${x}" failed"
 	done
+
+	# The upstream code generate ChangeLog when code
+	# is fetched through git and try to install it directly else.
+	# Using github tarball without upstream
+	# generation fails because the file is missed.
+	# I generate an empty ChangeLog to avoid patching
+	# the upstream code.
+	touch "${S}/ChangeLog"
 }
 
 src_configure() {
@@ -198,6 +206,9 @@ src_install() {
 		python_optimize
 		python_optimize "${ED}"/usr/share/gnucash/python
 	fi
+
+	# Drop empty ChangeLog
+	rm -f "${ED}"/usr/share/doc/${PF}/ChangeLog
 }
 
 pkg_postinst() {
