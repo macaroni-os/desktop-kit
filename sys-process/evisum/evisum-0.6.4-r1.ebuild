@@ -15,4 +15,4 @@ KEYWORDS="*"
 DEPEND="dev-libs/efl"
 RDEPEND="|| ( dev-libs/efl[X] dev-libs/efl[wayland] )"
 
-DOCS=( BUGS NEWS TODO )
+DOCS=( BUGS NEWS README TODO )
