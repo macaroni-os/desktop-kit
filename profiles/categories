@@ -3,6 +3,7 @@ net-im
 net-irc
 net-misc
 net-print
+sys-apps
 sys-process
 x11-libs
 x11-misc
