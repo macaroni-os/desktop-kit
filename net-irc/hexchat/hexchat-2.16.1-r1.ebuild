@@ -48,7 +48,6 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 BDEPEND="
-	dev-util/glib-utils
 	app-arch/xz-utils
 	app-text/iso-codes
 	sys-devel/gettext
