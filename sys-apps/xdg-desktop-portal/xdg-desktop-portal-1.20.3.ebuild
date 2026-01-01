@@ -36,6 +36,10 @@ RDEPEND="dev-libs/glib:2
 DEPEND="${RDEPEND}
 "
 src_configure() {
+	# avoid issues on configure with sandbox for gst-inspect-1.0
+	addpredict /dev/dri
+	addpredict /proc/self/task
+
 	  local emesonargs=(
 	      -Ddbus-service-dir="${EPREFIX}/usr/share/dbus-1/services"
 	      -Dsystemd-user-unit-dir="$(systemd_get_userunitdir)"
