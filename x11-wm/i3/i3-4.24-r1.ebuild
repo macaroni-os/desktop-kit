@@ -59,6 +59,10 @@ RDEPEND="
 "
 BDEPEND="virtual/pkgconfig"
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-4.16-musl-GLOB_TILDE.patch
+)
+
 post_src_unpack() {
 	mv "${WORKDIR}/"i3-i3* "${S}" || die
 }
